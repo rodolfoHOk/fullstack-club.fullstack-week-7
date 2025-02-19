@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getRestaurantBySlugWithMenuCategoriesAndProducts } from "@/data/get-restaurant-by-slug-with-menu-categories-and-products";
 import { isConsumptionMethodValid } from "@/data/is-consumption-method-valid";
 
+import { RestaurantCategories } from "./components/categories";
 import { RestaurantHeader } from "./components/header";
 
 interface RestaurantMenuPageProps {
@@ -28,6 +29,7 @@ export default async function RestaurantMenuPage({
   return (
     <div>
       <RestaurantHeader restaurant={restaurant} />
+      <RestaurantCategories restaurant={restaurant} />
     </div>
   );
 }
