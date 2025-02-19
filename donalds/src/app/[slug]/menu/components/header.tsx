@@ -50,6 +50,7 @@ export function RestaurantHeader({ restaurant }: RestaurantHeaderProps) {
           fill
           className="object-cover"
           sizes="fill"
+          priority
         />
       )}
 
