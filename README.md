@@ -9,6 +9,7 @@
 - Next.js
 - Tailwind CSS
 - Prisma ORM
+- PostgreSQL
 
 ## Links úteis
 
