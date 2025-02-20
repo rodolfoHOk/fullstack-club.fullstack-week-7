@@ -29,6 +29,7 @@ export default async function RestaurantMenuPage({
   return (
     <div>
       <RestaurantHeader restaurant={restaurant} />
+      
       <RestaurantCategories restaurant={restaurant} />
     </div>
   );
