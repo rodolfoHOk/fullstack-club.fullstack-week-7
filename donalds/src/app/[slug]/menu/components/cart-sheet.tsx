@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 
 import { CartContext } from '../contexts/cart';
 import { CartItem } from './cart-item';
