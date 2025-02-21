@@ -62,6 +62,8 @@ model Order {
   status            OrderStatus
   consumptionMethod ConsumptionMethod
   restaurantId      String
+  customerName      String
+  customerCpf       String
   createdAt         DateTime          @default(now())
   updatedAt         DateTime          @updatedAt
 
