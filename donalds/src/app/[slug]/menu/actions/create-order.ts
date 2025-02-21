@@ -1,6 +1,7 @@
 "use server";
 
 import { ConsumptionMethod } from "@prisma/client";
+import { redirect } from 'next/navigation';
 
 import { db } from "@/lib/prisma";
 
@@ -61,4 +62,8 @@ export async function createOrder(input: CreateOrderInput) {
       total,
     },
   });
+
+  redirect(
+    `/${input.slug}/orders?cpf=${removeCpfPunctuation(input.customerCpf)}`,
+  );
 }
